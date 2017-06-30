@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+}
+
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  #message {
+    margin: 0;
+    width: 100%;
+  }
+}
