@@ -5,46 +5,54 @@ const Footer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   flex-shrink: 0;
 `;
 
 const Text = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   color: #56bf4d;
-  align-content: center;
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 4px;
 `;
 
 const Icon = styled.img`
-  margin-left: 8px;
-  height: 24px;
-  width: 24px;
+  height: 25px;
+  width: 25px;
 `;
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+`;
+
+const Link = styled.a`
+  display: flex;
+  margin-left: 8px;
+  align-items: center;
 `;
 
 export default () =>
   <Footer>
     <Wrapper>
       <Text>reach me via:</Text>
-      <a href="https://t.me/nikolaevigor">
+      <Link href="https://t.me/nikolaevigor">
         <Icon src={`${process.env.PUBLIC_URL}/img/tg50.png`} />
-      </a>
+      </Link>
     </Wrapper>
     <Wrapper>
       <Text>find me here:</Text>
-      <a href="https://github.com/nikolaevigor">
+      <Link href="https://github.com/nikolaevigor">
         <Icon src={`${process.env.PUBLIC_URL}/img/gh50.png`} />
-      </a>
-      <a href="https://stackoverflow.com/users/story/4113768">
+      </Link>
+      <Link href="https://stackoverflow.com/users/story/4113768">
         <Icon src={`${process.env.PUBLIC_URL}/img/so50.png`} />
-      </a>
-      <a href="https://twitter.com/NikolaevIgor">
+      </Link>
+      <Link href="https://twitter.com/NikolaevIgor">
         <Icon src={`${process.env.PUBLIC_URL}/img/twi50.png`} />
-      </a>
+      </Link>
     </Wrapper>
 
   </Footer>;
