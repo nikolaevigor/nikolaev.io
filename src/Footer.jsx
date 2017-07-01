@@ -31,19 +31,19 @@ export default () =>
     <Wrapper>
       <Text>reach me via:</Text>
       <a href="https://t.me/nikolaevigor">
-        <Icon src={`${process.env.PUBLIC_URL}/img/tg25.png`} />
+        <Icon src={`${process.env.PUBLIC_URL}/img/tg50.png`} />
       </a>
     </Wrapper>
     <Wrapper>
       <Text>find me here:</Text>
       <a href="https://github.com/nikolaevigor">
-        <Icon src={`${process.env.PUBLIC_URL}/img/gh25.png`} />
+        <Icon src={`${process.env.PUBLIC_URL}/img/gh50.png`} />
       </a>
       <a href="https://stackoverflow.com/users/story/4113768">
-        <Icon src={`${process.env.PUBLIC_URL}/img/so25.png`} />
+        <Icon src={`${process.env.PUBLIC_URL}/img/so50.png`} />
       </a>
       <a href="https://twitter.com/NikolaevIgor">
-        <Icon src={`${process.env.PUBLIC_URL}/img/twi25.png`} />
+        <Icon src={`${process.env.PUBLIC_URL}/img/twi50.png`} />
       </a>
     </Wrapper>
 
