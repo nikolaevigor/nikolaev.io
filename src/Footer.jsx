@@ -47,12 +47,11 @@ export default () =>
       <Link href="https://github.com/nikolaevigor">
         <Icon src={`${process.env.PUBLIC_URL}/img/gh50.png`} />
       </Link>
-      <Link href="https://stackoverflow.com/users/story/4113768">
+      <Link href="https://stackoverflow.com/story/igornikolaev">
         <Icon src={`${process.env.PUBLIC_URL}/img/so50.png`} />
       </Link>
       <Link href="https://twitter.com/NikolaevIgor">
         <Icon src={`${process.env.PUBLIC_URL}/img/twi50.png`} />
       </Link>
     </Wrapper>
-
   </Footer>;
