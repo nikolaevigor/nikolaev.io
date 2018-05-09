@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Grid } from 'react-flexbox-grid';
-import styled from 'styled-components';
-import './App.css';
+import React, { Component } from "react";
+import { Grid } from "react-flexbox-grid";
+import styled from "styled-components";
+import "./App.css";
 
-import TelegramMessage from './TelegramMessage';
-import Footer from './Footer';
+import TelegramMessage from "./TelegramMessage";
+import Footer from "./Footer";
 
 const Content = styled.div`
   display: flex;
@@ -17,9 +17,17 @@ const MessageContainer = styled.div`
   display: flex;
   align-items: center;
   flex-grow: 1;
-
 `;
+
+const MessageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const MessageLink = styled.a`
+  display: flex;
+  justify-content: center;
+  width: 100%;
   text-decoration: none;
 `;
 
@@ -30,12 +38,16 @@ class App extends Component {
         <Content>
           <MessageContainer>
             <Grid id="message">
-              <MessageLink href="http://cybermates.org">
-                <TelegramMessage />
-              </MessageLink>
+              <MessageWrapper>
+                <MessageLink href="http://cybermates.org">
+                  <TelegramMessage />
+                </MessageLink>
+              </MessageWrapper>
             </Grid>
           </MessageContainer>
-          <Grid><Footer /></Grid>
+          <Grid>
+            <Footer />
+          </Grid>
         </Content>
       </div>
     );

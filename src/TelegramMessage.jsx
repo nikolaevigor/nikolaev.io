@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const TelegramMessage = styled.div`
   display: flex;
@@ -7,9 +7,11 @@ const TelegramMessage = styled.div`
   align-items: center;
   padding: 4px 0 4px 4px;
   background: #fff;
+  width: 100%;
+  max-width: 30rem;
 
   &:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 `;
 
@@ -63,7 +65,7 @@ const Row = styled.div`
   margin-top: 8px;
 `;
 
-export default () =>
+export default () => (
   <TelegramMessage>
     <Avatar src={`${process.env.PUBLIC_URL}/img/avatar.png`} alt="Avatar" />
     <Content>
@@ -79,6 +81,7 @@ export default () =>
           <Timestamp>1/10/16</Timestamp>
         </TimestampWrapper>
       </Row>
-      <Message>Я сейчас в cybermates</Message>
+      <Message>Я сейчас в Cybermates</Message>
     </Content>
-  </TelegramMessage>;
+  </TelegramMessage>
+);
