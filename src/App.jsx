@@ -39,7 +39,7 @@ class App extends Component {
           <MessageContainer>
             <Grid id="message">
               <MessageWrapper>
-                <MessageLink href="http://cybermates.org">
+                <MessageLink href="https://cybermates.org/tournaments">
                   <TelegramMessage />
                 </MessageLink>
               </MessageWrapper>
