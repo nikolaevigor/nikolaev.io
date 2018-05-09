@@ -5,13 +5,14 @@ const TelegramMessage = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 4px 0 4px 4px;
+  padding: 0;
   background: #fff;
   width: 100%;
   max-width: 30rem;
 
   &:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
   }
 `;
 
@@ -56,6 +57,11 @@ const Content = styled.div`
   border-top: solid 1px #d5d5d8;
   border-bottom: solid 1px #d5d5d8;
   margin-left: 8px;
+
+  &:hover {
+    border-top: none;
+    border-bottom: none;
+  }
 `;
 
 const Row = styled.div`
