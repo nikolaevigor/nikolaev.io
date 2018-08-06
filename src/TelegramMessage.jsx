@@ -54,13 +54,14 @@ const TimestampWrapper = styled.div`
 const Content = styled.div`
   flex-grow: 1;
   justify-content: space-between;
-  border-top: solid 1px #d5d5d8;
-  border-bottom: solid 1px #d5d5d8;
+  border-top: 1px solid #d5d5d8;
+  border-bottom: 1px solid #d5d5d8;
   margin-left: 8px;
 
-  &:hover {
+  ${TelegramMessage}:hover & {
     border-top: none;
     border-bottom: none;
+    padding: 1px 0;
   }
 `;
 
@@ -84,10 +85,10 @@ export default () => (
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAABGZJREFUaAXtWGFoFFcQntm9mKpEFJFSKSLSQml/FW2CWMndEZGQ3Jn02JiWYhFBQSpYqC1ii7QqCPWHoEIriCDSxrvGnHtJrRDuYhWFovhDhIIoIsVSRCoN2mBy+zov7a6zL7d39xLu4o89uNt5s9+8mW/ezHu7BxB+wgyEGQgzEGYgzECYAcAXKQdWPtGKCPsFwgJ0nM/S8aELQfGp2EgQsN76VH5DC6LzM/l9CQX9onGMfl8rFUcp7AtB5L1C+6smOAOSBAvcZLInBmFnnUgil5gXAcwCiFe8aGkgBOxh40mxHNZQwXUdC8C5TXCS4l7p8yvEwUw8971fVx47q0SsQuJLENDDA6b2OPfmL6u+4DopV8LO2q7Vk0+kaM/MUIw8hptjDbjGftce5USqwfJJuG1N5dTF5NumIy6Rk/nM0UMDzOa+WPYe00G12Lo3+/vDyZeLQlBzMxICnhmGk+qL5nwkdLB17ZH2n9obi6YYoL5YxrNOB+D2vuiQXCHvo4OVRnUl0jSv4Tj5XO1F+59wOBPLnVB0oIOVtnUrLWukcxedDpv8AeMF8bDxU7+OdigNrGtbl2a38skORHGOnHqnNW2zv42DuTobyz52g5FXHSy3qzmRVD7xFkV/hTbZBczxX0VDtPS3Dt5mOtDBcjsp17RHuoe7F1Pt2gqJCQCnRyWhg1VJ1JTI1msrGyLmxI+0I63gjump5JN0bGiY63Sw3I7LNVuRx6NLj1DdRrkzkr/LxOyjig50sKqtO64JEauQ/JgcbHOdyCs198jCpgc7uE7KOljVlo/RGkmuQyEOSKUQ+FUmbg9xgK7cU+hoo9Y7T3be1k4vSnefOZHmgbaBR3w+HSy3KyXTk4H4lm68I7+0RWatQufGUsBqdKmLna8TiTRhPRK0FH9TdydVEjrYanyrpRVBwNPTIdNV6FpoOGiT00XMcZGa+4P+eO4W04EOltuVk4kI7iIAJc37aJOx0pY5B5w+au43vFlIECh2q6Wqg+VzVZKNM3H7rADxIQGnTQaXjB2isNf7nCGeykQHv/HpaKCDVW3LjSdLKxMbPDNdMvTmtoUc7FScXB19Or5V0cm3vKqxqm2lse8RRfaG7BEyet6stFKSpCSrTtY70rHWcYxhOrnnePcQ7psT2PxDm/2npyNBB8vtqpV9RKRRtWR6C13LHSj+SiZLmLMnRQPX9rfaN5gOdLDcTkdWdy2opsySl5NNRELuUJwELRx8pJLQweoErmKnrIgLCFoZKqNN9J8TlSBscLHySrq99BfO1/yABRT76JDdEoTl9jOVA4nIiQPITPWJkE635nqJpNiYT9xRHxR9Bgzr089wMKW0+HwBZcYhJOP1f0ZhsySh3Cgx1MGWMC+jKktE2lUg88cEjHflErmnz31MOWDdWyWw7q2ZXysSkS4CyIwVhdF9Nnb+dx5GwAFbEsvtZiqX7RF18v/fp/dO6hE/T0ftgopxxzpY1ya8hhkIMxBmIMxAmIHZysC/CdAvw97jXXMAAAAASUVORK5CYII="
             alt="Double check icon"
           />
-          <Timestamp>1/10/16</Timestamp>
+          <Timestamp>06/08/18</Timestamp>
         </TimestampWrapper>
       </Row>
-      <Message>Я сейчас в Cybermates</Message>
+      <Message>Looking for participation in cool projects</Message>
     </Content>
   </TelegramMessage>
 );

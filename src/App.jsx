@@ -4,7 +4,7 @@ import styled from "styled-components";
 import "./App.css";
 
 import TelegramMessage from "./TelegramMessage";
-import Footer from "./Footer";
+import Links from "./Links";
 
 const Content = styled.div`
   display: flex;
@@ -27,8 +27,9 @@ const MessageWrapper = styled.div`
 const MessageLink = styled.a`
   display: flex;
   justify-content: center;
-  width: 100%;
   text-decoration: none;
+  max-width: 30rem;
+  width: 100%;
 `;
 
 class App extends Component {
@@ -39,15 +40,15 @@ class App extends Component {
           <MessageContainer>
             <Grid id="message">
               <MessageWrapper>
-                <MessageLink href="https://cybermates.org/tournaments">
+                <MessageLink href="https://t.me/nikolaevigor">
                   <TelegramMessage />
                 </MessageLink>
               </MessageWrapper>
+              <MessageWrapper>
+                <Links />
+              </MessageWrapper>
             </Grid>
           </MessageContainer>
-          <Grid>
-            <Footer />
-          </Grid>
         </Content>
       </div>
     );
