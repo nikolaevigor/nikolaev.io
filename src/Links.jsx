@@ -20,7 +20,10 @@ const Links = styled.ul`
   }
 `;
 
-const Link = styled.li`
+const Link = styled.a`
+  color: #9b9b9b;
+  text-decoration: none;
+
   &:hover {
     text-decoration: none;
     position: relative;
@@ -40,10 +43,12 @@ const Link = styled.li`
 
 export default () => (
   <Links>
-    <Link>experience</Link>
-    <Link>telegram</Link>
-    <Link>github</Link>
-    <Link>stackoverflow</Link>
-    <Link>twitter</Link>
+    <Link href="https://stackoverflow.com/story/igornikolaev">experience</Link>
+    <Link href="https://t.me/nikolaevigor">telegram</Link>
+    <Link href="https://github.com/nikolaevigor">github</Link>
+    <Link href="https://stackoverflow.com/users/4113768/igornikolaev?tab=profile">
+      stackoverflow
+    </Link>
+    <Link href="https://twitter.com/NikolaevIgor">twitter</Link>
   </Links>
 );
