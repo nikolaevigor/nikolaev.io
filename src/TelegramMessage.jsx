@@ -92,7 +92,7 @@ export default () => (
           <Timestamp>25/09/19</Timestamp>
         </TimestampWrapper>
       </Row>
-      <Message>Software Engineer at <MessageLink href="https://ntechlab.ru">NtechLab</MessageLink></Message>
+      <Message>Software Engineer at <MessageLink href="https://ntechlab.com">NtechLab</MessageLink></Message>
     </Content>
   </TelegramMessage>
 );
